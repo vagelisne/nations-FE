@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Area</th>
+      <th>Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let country of countries">
+      <td><a [routerLink]="['/country', country.id]">{{country.name}}</a></td>
+      <td>{{country.area}}</td>
+      <td>{{country.countryCode}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,4 @@
+<p>
+  The official language in {{countryName}} is {{officialLanguage}}.
+</p>
+Other languages spoken are: <div *ngFor="let cl of countryLanguages">{{!cl.officialLanguage ? cl.language : ''}}</div>
